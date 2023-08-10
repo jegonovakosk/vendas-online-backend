@@ -16,7 +16,6 @@ export class AddressService {
   ) {}
 
   async createAddress(createAddressDto: CreateAddressDto, userId: number) {
-    console.log(userId);
     await this.userService.findUserById(userId);
     await this.cityService.findCityById(createAddressDto.cityId);
 
