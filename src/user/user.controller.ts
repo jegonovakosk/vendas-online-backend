@@ -8,7 +8,6 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { CreateUserDto } from './DTO/createUser.dto';
-import { retry } from 'rxjs';
 import { UserService } from './user.service';
 import { UserEntity } from './entities/user.entity';
 import { returnUserDto } from './DTO/returnUser.dto';
